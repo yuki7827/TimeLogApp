@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180396042423E11A00012755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396032423E11A00012755 /* AppDelegate.swift */; };
+		1803960C2423E11B00012755 /* TimeLogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1803960A2423E11B00012755 /* TimeLogApp.xcdatamodeld */; };
+		1803960E2423E12300012755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1803960D2423E12300012755 /* Assets.xcassets */; };
+		180396112423E12300012755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803960F2423E12300012755 /* LaunchScreen.storyboard */; };
+		1803961C2423E12400012755 /* TimeLogAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803961B2423E12400012755 /* TimeLogAppTests.swift */; };
+		180396272423E12400012755 /* TimeLogAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396262423E12400012755 /* TimeLogAppUITests.swift */; };
+		180396452423E2BB00012755 /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803963D2423E2BB00012755 /* CountModel.swift */; };
+		180396462423E2BB00012755 /* CountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803963F2423E2BB00012755 /* CountPresenter.swift */; };
+		180396482423E2BB00012755 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396422423E2BB00012755 /* CountViewController.swift */; };
+		180396492423E2BB00012755 /* CountViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396432423E2BB00012755 /* CountViewController2.swift */; };
+		1803964C2423E8AA00012755 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964B2423E8AA00012755 /* TabViewController.swift */; };
+		1803964E2423F20E00012755 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964D2423F20E00012755 /* TopViewController.swift */; };
+		180396512423F31400012755 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964F2423F31300012755 /* SettingViewController.swift */; };
+		180396542424653000012755 /* TimeLogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396532424652F00012755 /* TimeLogPresenter.swift */; };
+		180396562424653D00012755 /* TimeLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396552424653D00012755 /* TimeLogModel.swift */; };
+		180396582427754A00012755 /* TimeLogConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396572427754A00012755 /* TimeLogConst.swift */; };
+		18317B7224387612003759B9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317B7024387612003759B9 /* HistoryViewController.swift */; };
+		18317B7324387612003759B9 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317B7124387612003759B9 /* HistoryViewController.xib */; };
+		18317B762439A23B003759B9 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317B742439A23B003759B9 /* HistoryTableViewCell.swift */; };
+		18317B772439A23C003759B9 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317B752439A23B003759B9 /* HistoryTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180396182423E12400012755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180395F82423E11A00012755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180395FF2423E11A00012755;
+			remoteInfo = TimeLogApp;
+		};
+		180396232423E12400012755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180395F82423E11A00012755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180395FF2423E11A00012755;
+			remoteInfo = TimeLogApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180396002423E11A00012755 /* TimeLogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180396032423E11A00012755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLogApp.xcdatamodel; sourceTree = "<group>"; };
+		1803960D2423E12300012755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180396102423E12300012755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180396122423E12300012755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180396172423E12400012755 /* TimeLogAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeLogAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1803961B2423E12400012755 /* TimeLogAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogAppTests.swift; sourceTree = "<group>"; };
+		1803961D2423E12400012755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180396222423E12400012755 /* TimeLogAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeLogAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180396262423E12400012755 /* TimeLogAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogAppUITests.swift; sourceTree = "<group>"; };
+		180396282423E12400012755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1803963D2423E2BB00012755 /* CountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
+		1803963F2423E2BB00012755 /* CountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountPresenter.swift; sourceTree = "<group>"; };
+		180396422423E2BB00012755 /* CountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
+		180396432423E2BB00012755 /* CountViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController2.swift; sourceTree = "<group>"; };
+		1803964B2423E8AA00012755 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		1803964D2423F20E00012755 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		1803964F2423F31300012755 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		180396532424652F00012755 /* TimeLogPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogPresenter.swift; sourceTree = "<group>"; };
+		180396552424653D00012755 /* TimeLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogModel.swift; sourceTree = "<group>"; };
+		180396572427754A00012755 /* TimeLogConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogConst.swift; sourceTree = "<group>"; };
+		18317B7024387612003759B9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		18317B7124387612003759B9 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		18317B742439A23B003759B9 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		18317B752439A23B003759B9 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180395FD2423E11A00012755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180396142423E12400012755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803961F2423E12400012755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180395F72423E11A00012755 = {
+			isa = PBXGroup;
+			children = (
+				180396022423E11A00012755 /* TimeLogApp */,
+				1803961A2423E12400012755 /* TimeLogAppTests */,
+				180396252423E12400012755 /* TimeLogAppUITests */,
+				180396012423E11A00012755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180396012423E11A00012755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180396002423E11A00012755 /* TimeLogApp.app */,
+				180396172423E12400012755 /* TimeLogAppTests.xctest */,
+				180396222423E12400012755 /* TimeLogAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180396022423E11A00012755 /* TimeLogApp */ = {
+			isa = PBXGroup;
+			children = (
+				18317B6F243872EF003759B9 /* Xib */,
+				1803963C2423E2BB00012755 /* Model */,
+				1803963E2423E2BB00012755 /* Presenter */,
+				180396402423E2BB00012755 /* View */,
+				180396032423E11A00012755 /* AppDelegate.swift */,
+				1803960D2423E12300012755 /* Assets.xcassets */,
+				1803960F2423E12300012755 /* LaunchScreen.storyboard */,
+				180396122423E12300012755 /* Info.plist */,
+				1803960A2423E11B00012755 /* TimeLogApp.xcdatamodeld */,
+				180396572427754A00012755 /* TimeLogConst.swift */,
+			);
+			path = TimeLogApp;
+			sourceTree = "<group>";
+		};
+		1803961A2423E12400012755 /* TimeLogAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1803961B2423E12400012755 /* TimeLogAppTests.swift */,
+				1803961D2423E12400012755 /* Info.plist */,
+			);
+			path = TimeLogAppTests;
+			sourceTree = "<group>";
+		};
+		180396252423E12400012755 /* TimeLogAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180396262423E12400012755 /* TimeLogAppUITests.swift */,
+				180396282423E12400012755 /* Info.plist */,
+			);
+			path = TimeLogAppUITests;
+			sourceTree = "<group>";
+		};
+		1803963C2423E2BB00012755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				180396552424653D00012755 /* TimeLogModel.swift */,
+				1803963D2423E2BB00012755 /* CountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1803963E2423E2BB00012755 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				180396532424652F00012755 /* TimeLogPresenter.swift */,
+				1803963F2423E2BB00012755 /* CountPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		180396402423E2BB00012755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1803964F2423F31300012755 /* SettingViewController.swift */,
+				180396422423E2BB00012755 /* CountViewController.swift */,
+				180396432423E2BB00012755 /* CountViewController2.swift */,
+				1803964B2423E8AA00012755 /* TabViewController.swift */,
+				1803964D2423F20E00012755 /* TopViewController.swift */,
+				18317B7024387612003759B9 /* HistoryViewController.swift */,
+				18317B7124387612003759B9 /* HistoryViewController.xib */,
+				18317B742439A23B003759B9 /* HistoryTableViewCell.swift */,
+				18317B752439A23B003759B9 /* HistoryTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18317B6F243872EF003759B9 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180395FF2423E11A00012755 /* TimeLogApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803962B2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogApp" */;
+			buildPhases = (
+				180395FC2423E11A00012755 /* Sources */,
+				180395FD2423E11A00012755 /* Frameworks */,
+				180395FE2423E11A00012755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeLogApp;
+			productName = TimeLogApp;
+			productReference = 180396002423E11A00012755 /* TimeLogApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180396162423E12400012755 /* TimeLogAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803962E2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppTests" */;
+			buildPhases = (
+				180396132423E12400012755 /* Sources */,
+				180396142423E12400012755 /* Frameworks */,
+				180396152423E12400012755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180396192423E12400012755 /* PBXTargetDependency */,
+			);
+			name = TimeLogAppTests;
+			productName = TimeLogAppTests;
+			productReference = 180396172423E12400012755 /* TimeLogAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180396212423E12400012755 /* TimeLogAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180396312423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppUITests" */;
+			buildPhases = (
+				1803961E2423E12400012755 /* Sources */,
+				1803961F2423E12400012755 /* Frameworks */,
+				180396202423E12400012755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180396242423E12400012755 /* PBXTargetDependency */,
+			);
+			name = TimeLogAppUITests;
+			productName = TimeLogAppUITests;
+			productReference = 180396222423E12400012755 /* TimeLogAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180395F82423E11A00012755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Baminami;
+				TargetAttributes = {
+					180395FF2423E11A00012755 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					180396162423E12400012755 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180395FF2423E11A00012755;
+					};
+					180396212423E12400012755 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180395FF2423E11A00012755;
+					};
+				};
+			};
+			buildConfigurationList = 180395FB2423E11A00012755 /* Build configuration list for PBXProject "TimeLogApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180395F72423E11A00012755;
+			productRefGroup = 180396012423E11A00012755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180395FF2423E11A00012755 /* TimeLogApp */,
+				180396162423E12400012755 /* TimeLogAppTests */,
+				180396212423E12400012755 /* TimeLogAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180395FE2423E11A00012755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180396112423E12300012755 /* LaunchScreen.storyboard in Resources */,
+				1803960E2423E12300012755 /* Assets.xcassets in Resources */,
+				18317B772439A23C003759B9 /* HistoryTableViewCell.xib in Resources */,
+				18317B7324387612003759B9 /* HistoryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180396152423E12400012755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180396202423E12400012755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180395FC2423E11A00012755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180396462423E2BB00012755 /* CountPresenter.swift in Sources */,
+				1803960C2423E11B00012755 /* TimeLogApp.xcdatamodeld in Sources */,
+				18317B762439A23B003759B9 /* HistoryTableViewCell.swift in Sources */,
+				180396042423E11A00012755 /* AppDelegate.swift in Sources */,
+				180396542424653000012755 /* TimeLogPresenter.swift in Sources */,
+				18317B7224387612003759B9 /* HistoryViewController.swift in Sources */,
+				180396452423E2BB00012755 /* CountModel.swift in Sources */,
+				1803964E2423F20E00012755 /* TopViewController.swift in Sources */,
+				180396512423F31400012755 /* SettingViewController.swift in Sources */,
+				180396482423E2BB00012755 /* CountViewController.swift in Sources */,
+				1803964C2423E8AA00012755 /* TabViewController.swift in Sources */,
+				180396582427754A00012755 /* TimeLogConst.swift in Sources */,
+				180396492423E2BB00012755 /* CountViewController2.swift in Sources */,
+				180396562424653D00012755 /* TimeLogModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180396132423E12400012755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1803961C2423E12400012755 /* TimeLogAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803961E2423E12400012755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180396272423E12400012755 /* TimeLogAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180396192423E12400012755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180395FF2423E11A00012755 /* TimeLogApp */;
+			targetProxy = 180396182423E12400012755 /* PBXContainerItemProxy */;
+		};
+		180396242423E12400012755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180395FF2423E11A00012755 /* TimeLogApp */;
+			targetProxy = 180396232423E12400012755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1803960F2423E12300012755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180396102423E12300012755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180396292423E12400012755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1803962A2423E12400012755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1803962C2423E12400012755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1803962D2423E12400012755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1803962F2423E12400012755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeLogApp.app/TimeLogApp";
+			};
+			name = Debug;
+		};
+		180396302423E12400012755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeLogApp.app/TimeLogApp";
+			};
+			name = Release;
+		};
+		180396322423E12400012755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeLogApp;
+			};
+			name = Debug;
+		};
+		180396332423E12400012755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R92P92MVFL;
+				INFOPLIST_FILE = TimeLogAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baminami.TimeLogAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeLogApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180395FB2423E11A00012755 /* Build configuration list for PBXProject "TimeLogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180396292423E12400012755 /* Debug */,
+				1803962A2423E12400012755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1803962B2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803962C2423E12400012755 /* Debug */,
+				1803962D2423E12400012755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1803962E2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803962F2423E12400012755 /* Debug */,
+				180396302423E12400012755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180396312423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180396322423E12400012755 /* Debug */,
+				180396332423E12400012755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1803960A2423E11B00012755 /* TimeLogApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */,
+			);
+			currentVersion = 1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */;
+			path = TimeLogApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 180395F82423E11A00012755 /* Project object */;
+}
