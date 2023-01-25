@@ -10,7 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var taskList: Array<Dictionary<String, String>> = []
+    var taskList: Array<Dictionary<String, Any>> = []
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,14 +24,46 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
         //変数の中身を作る
 //        cell.textLabel!.text = taskList[indexPath.row]["taskName"]
-        cell.taskName.text = taskList[indexPath.row]["taskName"]
-        cell.time.text = taskList[indexPath.row]["passageTime"]
+        let taskName = taskList[indexPath.row]["taskName"] as? String ?? ""
+        if taskName.hasPrefix("#") {
+            let idTaskName = String(taskName[taskName.index(taskName.startIndex, offsetBy: 1)...])
+            let underScoreIndex = idTaskName.index(of: "_")
+            var id: String?
+            var task: String?
+            if let index = underScoreIndex {
+                id = String(idTaskName[..<index])
+                let underScoreTask = String(idTaskName[index...])
+                task = String(underScoreTask[underScoreTask.index(underScoreTask.startIndex, offsetBy: 1)...])
+            }
+            if let id = id {
+                cell.categoryName.text = id
+            }
+            if let task = task {
+                cell.taskName.text = task
+            } else {
+                cell.taskName.text = taskList[indexPath.row]["taskName"] as? String ?? ""
+            }
+        }
+        let formatter = DateFormatter()
+        formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyy年M月d日H:m", options: 0, locale: Locale(identifier: "ja_JP"))
+        print(formatter.string(from: Date())) // 2017年8月12日
+        //            dict["startTime"] = formatter.string(from: model.startTime ?? Date())
+        let startTime = formatter.string(from: taskList[indexPath.row]["startTime"] as! Date)
+        let endTime = formatter.string(from: taskList[indexPath.row]["endTime"] as! Date)
+
+        cell.time.text = "\(startTime)~\(endTime)"
+//        var passageTime = taskList[indexPath.row]["passageTime"] as? String ?? ""
+//        passageTime = String(passageTime[...passageTime.index(passageTime.startIndex, offsetBy: 4)])
+        cell.passageTime.text = taskList[indexPath.row]["passageTime"] as? String ?? ""
         //戻り値の設定（表示する中身)
         return cell
     }
     
     //セルをタップした際に画面遷移をする
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let historyDetailVC = HistoryDetailViewController()
+        historyDetailVC.index = indexPath.row
+        self.present(historyDetailVC, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -48,7 +80,7 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.taskList = UserDefaults.standard.array(forKey: "timeLogList") as! Array<Dictionary<String, String>>
+        self.taskList = UserDefaults.standard.array(forKey: "timeLogList") as? Array<Dictionary<String, Any>> ?? []
         tableView.reloadData()
     }
     

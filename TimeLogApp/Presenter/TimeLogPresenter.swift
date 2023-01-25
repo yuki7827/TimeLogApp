@@ -43,7 +43,7 @@ final class TimeLogPresenter {
             self.model.timerCount = Int(Date().timeIntervalSince(self.model.startTime!))
 
             let sec = String(format: "%02d", self.model.timerCount % 60)
-            let min = String(format: "%02d", Int(floor(Double(self.model.timerCount) / 60)))
+            let min = String(format: "%02d", Int(floor(Double(self.model.timerCount) / 60)) % 60)
             let hour = String(format: "%02d", Int(floor(Double(self.model.timerCount) / 3600)))
             self.model.passageTime = "\(hour):\(min):\(sec)"
             self.view.onViewChange(model: self.model)
@@ -56,20 +56,33 @@ final class TimeLogPresenter {
     func saveModelData(model: TimeLogModel) {
         let formatter = DateFormatter()
         formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yyyy年M月d日H:m:s", options: 0, locale: Locale(identifier: "ja_JP"))
+        let hmPassageTime = String(model.passageTime[...model.passageTime.index(model.passageTime.startIndex, offsetBy: 4)])
         print(formatter.string(from: Date())) // 2017年8月12日
-        var dict: Dictionary<String, String> =  [:]
-            dict["startTime"] = formatter.string(from: model.startTime ?? Date())
-            dict["endTime"] = formatter.string(from: model.endTime ?? Date ())
-        dict["passageTime"] = model.passageTime
-            dict["taskName"] = model.taskName
+        // issueIdの回収
+        var issueId: String?
+        if model.taskName.hasPrefix("#") {
+            let idTaskName = String(model.taskName[model.taskName.index(model.taskName.startIndex, offsetBy: 1)...])
+            let underScoreIndex = idTaskName.index(of: "_")
+            if let index = underScoreIndex {
+                issueId = String(idTaskName[..<index])
+            }
+        }
+        var dict: Dictionary<String, Any> =  [:]
+//            dict["startTime"] = formatter.string(from: model.startTime ?? Date())
+        dict["startTime"] = model.startTime
+        dict["endTime"] =  model.endTime
+        dict["passageTime"] = hmPassageTime
+        dict["taskName"] = model.taskName
+        dict["workTime"] = "1.00"
+        dict["issueId"] = issueId ?? ""
         var timeLoglist = getModelData()
         timeLoglist.append(dict)
         UserDefaults.standard.set(timeLoglist, forKey: "timeLogList")
         
     }
     
-    func getModelData() -> Array<Dictionary<String, String>> {
-        if let timeLogList = UserDefaults.standard.object(forKey: "timeLogList") as? Array<Dictionary<String, String>> {
+    func getModelData() -> Array<Dictionary<String, Any>> {
+        if let timeLogList = UserDefaults.standard.object(forKey: "timeLogList") as? Array<Dictionary<String, Any>> {
             print(timeLogList)
             return timeLogList
         }

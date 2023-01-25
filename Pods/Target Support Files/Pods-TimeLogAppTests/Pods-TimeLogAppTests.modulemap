@@ -1,0 +1,6 @@
+framework module Pods_TimeLogAppTests {
+  umbrella header "Pods-TimeLogAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

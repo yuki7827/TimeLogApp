@@ -18,7 +18,7 @@ class TopViewController: UIViewController {
     private var presenter: TimeLogPresenter?
     private var timeLogModel: TimeLogModel!
     private var startTimeLabel: UILabel!
-    private var taskTextView: UITextField!
+    var taskTextView: UITextView!
     private var myButton: UIButton!
     
     override func viewDidLoad() {
@@ -54,15 +54,12 @@ class TopViewController: UIViewController {
         // redViewの縦方向の中心は、親ビューの縦方向の中心と同じ
         startTimeLabel.topAnchor.constraint(equalToSystemSpacingBelow: self.myButton.bottomAnchor, multiplier: 20).isActive = true
         
-        taskTextView = UITextField()
+        taskTextView = UITextView()
         taskTextView.frame = view.frame
         taskTextView.translatesAutoresizingMaskIntoConstraints = false
-        // プレースホルダを設定
-        taskTextView.placeholder = "入力してください。"
         // キーボードタイプを指定
         taskTextView.keyboardType = .default
-        // 枠線のスタイルを設定
-        taskTextView.borderStyle = .roundedRect
+
         // 改行ボタンの種類を設定
         taskTextView.returnKeyType = .done
         taskTextView.layer.borderWidth = 1
@@ -72,10 +69,10 @@ class TopViewController: UIViewController {
         
         // redViewの横方向の中心は、親ビューの横方向の中心と同じ
         // redViewの縦方向の中心は、親ビューの縦方向の中心と同じ
-        taskTextView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        taskTextView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         taskTextView.topAnchor.constraint(equalTo: self.myButton.bottomAnchor, constant: 20).isActive = true
         taskTextView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        taskTextView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 20).isActive = true
+        taskTextView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
 
     }
     

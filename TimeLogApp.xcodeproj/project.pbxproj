@@ -3,30 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09CF8C40E49A1A58C5372288 /* Pods_TimeLogApp_TimeLogAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077587218B879260955A998E /* Pods_TimeLogApp_TimeLogAppUITests.framework */; };
 		180396042423E11A00012755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396032423E11A00012755 /* AppDelegate.swift */; };
 		1803960C2423E11B00012755 /* TimeLogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1803960A2423E11B00012755 /* TimeLogApp.xcdatamodeld */; };
 		1803960E2423E12300012755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1803960D2423E12300012755 /* Assets.xcassets */; };
 		180396112423E12300012755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1803960F2423E12300012755 /* LaunchScreen.storyboard */; };
 		1803961C2423E12400012755 /* TimeLogAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803961B2423E12400012755 /* TimeLogAppTests.swift */; };
 		180396272423E12400012755 /* TimeLogAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396262423E12400012755 /* TimeLogAppUITests.swift */; };
-		180396452423E2BB00012755 /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803963D2423E2BB00012755 /* CountModel.swift */; };
-		180396462423E2BB00012755 /* CountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803963F2423E2BB00012755 /* CountPresenter.swift */; };
-		180396482423E2BB00012755 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396422423E2BB00012755 /* CountViewController.swift */; };
-		180396492423E2BB00012755 /* CountViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396432423E2BB00012755 /* CountViewController2.swift */; };
-		1803964C2423E8AA00012755 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964B2423E8AA00012755 /* TabViewController.swift */; };
-		1803964E2423F20E00012755 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964D2423F20E00012755 /* TopViewController.swift */; };
-		180396512423F31400012755 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803964F2423F31300012755 /* SettingViewController.swift */; };
-		180396542424653000012755 /* TimeLogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396532424652F00012755 /* TimeLogPresenter.swift */; };
-		180396562424653D00012755 /* TimeLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396552424653D00012755 /* TimeLogModel.swift */; };
-		180396582427754A00012755 /* TimeLogConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180396572427754A00012755 /* TimeLogConst.swift */; };
-		18317B7224387612003759B9 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317B7024387612003759B9 /* HistoryViewController.swift */; };
-		18317B7324387612003759B9 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317B7124387612003759B9 /* HistoryViewController.xib */; };
-		18317B762439A23B003759B9 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18317B742439A23B003759B9 /* HistoryTableViewCell.swift */; };
-		18317B772439A23C003759B9 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18317B752439A23B003759B9 /* HistoryTableViewCell.xib */; };
+		58019A0824540CCE0004EF2C /* TimeLogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58019A0024540CCE0004EF2C /* TimeLogApp.xcdatamodeld */; };
+		58019A1A24540DCA0004EF2C /* TimeLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A0B24540DCA0004EF2C /* TimeLogModel.swift */; };
+		58019A1B24540DCA0004EF2C /* CountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A0C24540DCA0004EF2C /* CountModel.swift */; };
+		58019A1C24540DCA0004EF2C /* TimeLogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A0E24540DCA0004EF2C /* TimeLogPresenter.swift */; };
+		58019A1D24540DCA0004EF2C /* CountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A0F24540DCA0004EF2C /* CountPresenter.swift */; };
+		58019A1F24540DCA0004EF2C /* RedMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A1224540DCA0004EF2C /* RedMineViewController.swift */; };
+		58019A2024540DCA0004EF2C /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A1324540DCA0004EF2C /* TopViewController.swift */; };
+		58019A2124540DCA0004EF2C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A1424540DCA0004EF2C /* TabViewController.swift */; };
+		58019A2624540DCA0004EF2C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A1924540DCA0004EF2C /* HistoryViewController.swift */; };
+		58019A2C245412C30004EF2C /* RedMineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58019A28245412C20004EF2C /* RedMineTableViewCell.xib */; };
+		58019A2D245412C30004EF2C /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58019A29245412C20004EF2C /* HistoryViewController.xib */; };
+		58019A2E245412C30004EF2C /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58019A2A245412C20004EF2C /* HistoryTableViewCell.xib */; };
+		58019A33245413DC0004EF2C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A31245413DC0004EF2C /* HistoryTableViewCell.swift */; };
+		58019A34245413DC0004EF2C /* RedMineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A32245413DC0004EF2C /* RedMineTableViewCell.swift */; };
+		58019A39245414320004EF2C /* HTTPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A36245414310004EF2C /* HTTPUtil.swift */; };
+		58019A3A245414320004EF2C /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A37245414310004EF2C /* DateUtil.swift */; };
+		58019A3B245414320004EF2C /* TimeLogConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A38245414310004EF2C /* TimeLogConst.swift */; };
+		58019A3D24541EE50004EF2C /* RedMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58019A3C24541EE50004EF2C /* RedMineViewController.xib */; };
+		58019A412454DE0E0004EF2C /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58019A402454DE0E0004EF2C /* HistoryDetailViewController.swift */; };
+		90D2913012EE609F90710847 /* Pods_TimeLogAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549783DD547D5317C5C5378 /* Pods_TimeLogAppTests.framework */; };
+		A6C23B0FBE743D943E11B1D9 /* Pods_TimeLogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774FEC46F57335516710D07 /* Pods_TimeLogApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0774FEC46F57335516710D07 /* Pods_TimeLogApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLogApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		077587218B879260955A998E /* Pods_TimeLogApp_TimeLogAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLogApp_TimeLogAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		180396002423E11A00012755 /* TimeLogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180396032423E11A00012755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLogApp.xcdatamodel; sourceTree = "<group>"; };
@@ -59,20 +69,32 @@
 		180396222423E12400012755 /* TimeLogAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeLogAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180396262423E12400012755 /* TimeLogAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogAppUITests.swift; sourceTree = "<group>"; };
 		180396282423E12400012755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1803963D2423E2BB00012755 /* CountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
-		1803963F2423E2BB00012755 /* CountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountPresenter.swift; sourceTree = "<group>"; };
-		180396422423E2BB00012755 /* CountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
-		180396432423E2BB00012755 /* CountViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController2.swift; sourceTree = "<group>"; };
-		1803964B2423E8AA00012755 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		1803964D2423F20E00012755 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		1803964F2423F31300012755 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		180396532424652F00012755 /* TimeLogPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogPresenter.swift; sourceTree = "<group>"; };
-		180396552424653D00012755 /* TimeLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogModel.swift; sourceTree = "<group>"; };
-		180396572427754A00012755 /* TimeLogConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogConst.swift; sourceTree = "<group>"; };
-		18317B7024387612003759B9 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		18317B7124387612003759B9 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
-		18317B742439A23B003759B9 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
-		18317B752439A23B003759B9 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		2CC1068811D596F00D1BAB7D /* Pods-TimeLogAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TimeLogAppTests/Pods-TimeLogAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FE7D495A5E0DF8DBBBA9958 /* Pods-TimeLogApp-TimeLogAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogApp-TimeLogAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TimeLogApp-TimeLogAppUITests/Pods-TimeLogApp-TimeLogAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3549783DD547D5317C5C5378 /* Pods_TimeLogAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLogAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AEA3F8179EEF979691FEB6 /* Pods-TimeLogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogApp.debug.xcconfig"; path = "Target Support Files/Pods-TimeLogApp/Pods-TimeLogApp.debug.xcconfig"; sourceTree = "<group>"; };
+		58019A0124540CCE0004EF2C /* TimeLogApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLogApp.xcdatamodel; sourceTree = "<group>"; };
+		58019A0B24540DCA0004EF2C /* TimeLogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogModel.swift; sourceTree = "<group>"; };
+		58019A0C24540DCA0004EF2C /* CountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountModel.swift; sourceTree = "<group>"; };
+		58019A0E24540DCA0004EF2C /* TimeLogPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogPresenter.swift; sourceTree = "<group>"; };
+		58019A0F24540DCA0004EF2C /* CountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountPresenter.swift; sourceTree = "<group>"; };
+		58019A1224540DCA0004EF2C /* RedMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedMineViewController.swift; sourceTree = "<group>"; };
+		58019A1324540DCA0004EF2C /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		58019A1424540DCA0004EF2C /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		58019A1924540DCA0004EF2C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		58019A28245412C20004EF2C /* RedMineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedMineTableViewCell.xib; sourceTree = "<group>"; };
+		58019A29245412C20004EF2C /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		58019A2A245412C20004EF2C /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		58019A31245413DC0004EF2C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		58019A32245413DC0004EF2C /* RedMineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedMineTableViewCell.swift; sourceTree = "<group>"; };
+		58019A36245414310004EF2C /* HTTPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUtil.swift; sourceTree = "<group>"; };
+		58019A37245414310004EF2C /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		58019A38245414310004EF2C /* TimeLogConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLogConst.swift; sourceTree = "<group>"; };
+		58019A3C24541EE50004EF2C /* RedMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedMineViewController.xib; sourceTree = "<group>"; };
+		58019A402454DE0E0004EF2C /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		A5CB8108974D79809E6E2264 /* Pods-TimeLogAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogAppTests.release.xcconfig"; path = "Target Support Files/Pods-TimeLogAppTests/Pods-TimeLogAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B76296A7CE3244626A249466 /* Pods-TimeLogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogApp.release.xcconfig"; path = "Target Support Files/Pods-TimeLogApp/Pods-TimeLogApp.release.xcconfig"; sourceTree = "<group>"; };
+		BA74890B2318FCCEADB2E15D /* Pods-TimeLogApp-TimeLogAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLogApp-TimeLogAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TimeLogApp-TimeLogAppUITests/Pods-TimeLogApp-TimeLogAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C23B0FBE743D943E11B1D9 /* Pods_TimeLogApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D2913012EE609F90710847 /* Pods_TimeLogAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +118,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CF8C40E49A1A58C5372288 /* Pods_TimeLogApp_TimeLogAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09DDB34BF1BBB117C0572EEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57AEA3F8179EEF979691FEB6 /* Pods-TimeLogApp.debug.xcconfig */,
+				B76296A7CE3244626A249466 /* Pods-TimeLogApp.release.xcconfig */,
+				2FE7D495A5E0DF8DBBBA9958 /* Pods-TimeLogApp-TimeLogAppUITests.debug.xcconfig */,
+				BA74890B2318FCCEADB2E15D /* Pods-TimeLogApp-TimeLogAppUITests.release.xcconfig */,
+				2CC1068811D596F00D1BAB7D /* Pods-TimeLogAppTests.debug.xcconfig */,
+				A5CB8108974D79809E6E2264 /* Pods-TimeLogAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		180395F72423E11A00012755 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +145,8 @@
 				1803961A2423E12400012755 /* TimeLogAppTests */,
 				180396252423E12400012755 /* TimeLogAppUITests */,
 				180396012423E11A00012755 /* Products */,
+				09DDB34BF1BBB117C0572EEF /* Pods */,
+				ED0925B3134181397547A140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,16 +163,18 @@
 		180396022423E11A00012755 /* TimeLogApp */ = {
 			isa = PBXGroup;
 			children = (
-				18317B6F243872EF003759B9 /* Xib */,
-				1803963C2423E2BB00012755 /* Model */,
-				1803963E2423E2BB00012755 /* Presenter */,
-				180396402423E2BB00012755 /* View */,
+				58019A35245414310004EF2C /* Util */,
+				58019A30245413DC0004EF2C /* TableCell */,
+				58019A27245412C20004EF2C /* Xib */,
+				58019A0A24540DCA0004EF2C /* Model */,
+				58019A0D24540DCA0004EF2C /* Presenter */,
+				58019A1024540DCA0004EF2C /* View */,
+				58019A0024540CCE0004EF2C /* TimeLogApp.xcdatamodeld */,
 				180396032423E11A00012755 /* AppDelegate.swift */,
 				1803960D2423E12300012755 /* Assets.xcassets */,
 				1803960F2423E12300012755 /* LaunchScreen.storyboard */,
 				180396122423E12300012755 /* Info.plist */,
 				1803960A2423E11B00012755 /* TimeLogApp.xcdatamodeld */,
-				180396572427754A00012755 /* TimeLogConst.swift */,
 			);
 			path = TimeLogApp;
 			sourceTree = "<group>";
@@ -155,45 +197,74 @@
 			path = TimeLogAppUITests;
 			sourceTree = "<group>";
 		};
-		1803963C2423E2BB00012755 /* Model */ = {
+		58019A0A24540DCA0004EF2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				180396552424653D00012755 /* TimeLogModel.swift */,
-				1803963D2423E2BB00012755 /* CountModel.swift */,
+				58019A0B24540DCA0004EF2C /* TimeLogModel.swift */,
+				58019A0C24540DCA0004EF2C /* CountModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1803963E2423E2BB00012755 /* Presenter */ = {
+		58019A0D24540DCA0004EF2C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				180396532424652F00012755 /* TimeLogPresenter.swift */,
-				1803963F2423E2BB00012755 /* CountPresenter.swift */,
+				58019A0E24540DCA0004EF2C /* TimeLogPresenter.swift */,
+				58019A0F24540DCA0004EF2C /* CountPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		180396402423E2BB00012755 /* View */ = {
+		58019A1024540DCA0004EF2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1803964F2423F31300012755 /* SettingViewController.swift */,
-				180396422423E2BB00012755 /* CountViewController.swift */,
-				180396432423E2BB00012755 /* CountViewController2.swift */,
-				1803964B2423E8AA00012755 /* TabViewController.swift */,
-				1803964D2423F20E00012755 /* TopViewController.swift */,
-				18317B7024387612003759B9 /* HistoryViewController.swift */,
-				18317B7124387612003759B9 /* HistoryViewController.xib */,
-				18317B742439A23B003759B9 /* HistoryTableViewCell.swift */,
-				18317B752439A23B003759B9 /* HistoryTableViewCell.xib */,
+				58019A1224540DCA0004EF2C /* RedMineViewController.swift */,
+				58019A1324540DCA0004EF2C /* TopViewController.swift */,
+				58019A1424540DCA0004EF2C /* TabViewController.swift */,
+				58019A1924540DCA0004EF2C /* HistoryViewController.swift */,
+				58019A402454DE0E0004EF2C /* HistoryDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		18317B6F243872EF003759B9 /* Xib */ = {
+		58019A27245412C20004EF2C /* Xib */ = {
 			isa = PBXGroup;
 			children = (
+				58019A3C24541EE50004EF2C /* RedMineViewController.xib */,
+				58019A28245412C20004EF2C /* RedMineTableViewCell.xib */,
+				58019A29245412C20004EF2C /* HistoryViewController.xib */,
+				58019A2A245412C20004EF2C /* HistoryTableViewCell.xib */,
 			);
 			path = Xib;
+			sourceTree = "<group>";
+		};
+		58019A30245413DC0004EF2C /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				58019A31245413DC0004EF2C /* HistoryTableViewCell.swift */,
+				58019A32245413DC0004EF2C /* RedMineTableViewCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		58019A35245414310004EF2C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				58019A36245414310004EF2C /* HTTPUtil.swift */,
+				58019A37245414310004EF2C /* DateUtil.swift */,
+				58019A38245414310004EF2C /* TimeLogConst.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		ED0925B3134181397547A140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0774FEC46F57335516710D07 /* Pods_TimeLogApp.framework */,
+				077587218B879260955A998E /* Pods_TimeLogApp_TimeLogAppUITests.framework */,
+				3549783DD547D5317C5C5378 /* Pods_TimeLogAppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1803962B2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogApp" */;
 			buildPhases = (
+				3234CB526FC57A3DC042BA79 /* [CP] Check Pods Manifest.lock */,
 				180395FC2423E11A00012755 /* Sources */,
 				180395FD2423E11A00012755 /* Frameworks */,
 				180395FE2423E11A00012755 /* Resources */,
+				E56F2A9C5128D384BA52FDE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1803962E2423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppTests" */;
 			buildPhases = (
+				4BFF325F4809C6BA7A2704BB /* [CP] Check Pods Manifest.lock */,
 				180396132423E12400012755 /* Sources */,
 				180396142423E12400012755 /* Frameworks */,
 				180396152423E12400012755 /* Resources */,
@@ -238,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 180396312423E12400012755 /* Build configuration list for PBXNativeTarget "TimeLogAppUITests" */;
 			buildPhases = (
+				E92110FA3F1D2FB00D0B42AD /* [CP] Check Pods Manifest.lock */,
 				1803961E2423E12400012755 /* Sources */,
 				1803961F2423E12400012755 /* Frameworks */,
 				180396202423E12400012755 /* Resources */,
+				30A907CD3F402D76F338F73D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,8 +378,10 @@
 			files = (
 				180396112423E12300012755 /* LaunchScreen.storyboard in Resources */,
 				1803960E2423E12300012755 /* Assets.xcassets in Resources */,
-				18317B772439A23C003759B9 /* HistoryTableViewCell.xib in Resources */,
-				18317B7324387612003759B9 /* HistoryViewController.xib in Resources */,
+				58019A2D245412C30004EF2C /* HistoryViewController.xib in Resources */,
+				58019A3D24541EE50004EF2C /* RedMineViewController.xib in Resources */,
+				58019A2E245412C30004EF2C /* HistoryTableViewCell.xib in Resources */,
+				58019A2C245412C30004EF2C /* RedMineTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,25 +401,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30A907CD3F402D76F338F73D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp-TimeLogAppUITests/Pods-TimeLogApp-TimeLogAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp-TimeLogAppUITests/Pods-TimeLogApp-TimeLogAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp-TimeLogAppUITests/Pods-TimeLogApp-TimeLogAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3234CB526FC57A3DC042BA79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeLogApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BFF325F4809C6BA7A2704BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeLogAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56F2A9C5128D384BA52FDE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp/Pods-TimeLogApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp/Pods-TimeLogApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeLogApp/Pods-TimeLogApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E92110FA3F1D2FB00D0B42AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeLogApp-TimeLogAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		180395FC2423E11A00012755 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180396462423E2BB00012755 /* CountPresenter.swift in Sources */,
+				58019A3A245414320004EF2C /* DateUtil.swift in Sources */,
+				58019A412454DE0E0004EF2C /* HistoryDetailViewController.swift in Sources */,
+				58019A1C24540DCA0004EF2C /* TimeLogPresenter.swift in Sources */,
 				1803960C2423E11B00012755 /* TimeLogApp.xcdatamodeld in Sources */,
-				18317B762439A23B003759B9 /* HistoryTableViewCell.swift in Sources */,
 				180396042423E11A00012755 /* AppDelegate.swift in Sources */,
-				180396542424653000012755 /* TimeLogPresenter.swift in Sources */,
-				18317B7224387612003759B9 /* HistoryViewController.swift in Sources */,
-				180396452423E2BB00012755 /* CountModel.swift in Sources */,
-				1803964E2423F20E00012755 /* TopViewController.swift in Sources */,
-				180396512423F31400012755 /* SettingViewController.swift in Sources */,
-				180396482423E2BB00012755 /* CountViewController.swift in Sources */,
-				1803964C2423E8AA00012755 /* TabViewController.swift in Sources */,
-				180396582427754A00012755 /* TimeLogConst.swift in Sources */,
-				180396492423E2BB00012755 /* CountViewController2.swift in Sources */,
-				180396562424653D00012755 /* TimeLogModel.swift in Sources */,
+				58019A2124540DCA0004EF2C /* TabViewController.swift in Sources */,
+				58019A3B245414320004EF2C /* TimeLogConst.swift in Sources */,
+				58019A1F24540DCA0004EF2C /* RedMineViewController.swift in Sources */,
+				58019A2024540DCA0004EF2C /* TopViewController.swift in Sources */,
+				58019A39245414320004EF2C /* HTTPUtil.swift in Sources */,
+				58019A1D24540DCA0004EF2C /* CountPresenter.swift in Sources */,
+				58019A0824540CCE0004EF2C /* TimeLogApp.xcdatamodeld in Sources */,
+				58019A34245413DC0004EF2C /* RedMineTableViewCell.swift in Sources */,
+				58019A33245413DC0004EF2C /* HistoryTableViewCell.swift in Sources */,
+				58019A2624540DCA0004EF2C /* HistoryViewController.swift in Sources */,
+				58019A1A24540DCA0004EF2C /* TimeLogModel.swift in Sources */,
+				58019A1B24540DCA0004EF2C /* CountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +690,7 @@
 		};
 		1803962C2423E12400012755 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57AEA3F8179EEF979691FEB6 /* Pods-TimeLogApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +709,7 @@
 		};
 		1803962D2423E12400012755 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76296A7CE3244626A249466 /* Pods-TimeLogApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +728,7 @@
 		};
 		1803962F2423E12400012755 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC1068811D596F00D1BAB7D /* Pods-TimeLogAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +750,7 @@
 		};
 		180396302423E12400012755 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5CB8108974D79809E6E2264 /* Pods-TimeLogAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +772,7 @@
 		};
 		180396322423E12400012755 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE7D495A5E0DF8DBBBA9958 /* Pods-TimeLogApp-TimeLogAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +793,7 @@
 		};
 		180396332423E12400012755 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA74890B2318FCCEADB2E15D /* Pods-TimeLogApp-TimeLogAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -670,6 +860,16 @@
 				1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */,
 			);
 			currentVersion = 1803960B2423E11B00012755 /* TimeLogApp.xcdatamodel */;
+			path = TimeLogApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		58019A0024540CCE0004EF2C /* TimeLogApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58019A0124540CCE0004EF2C /* TimeLogApp.xcdatamodel */,
+			);
+			currentVersion = 58019A0124540CCE0004EF2C /* TimeLogApp.xcdatamodel */;
 			path = TimeLogApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

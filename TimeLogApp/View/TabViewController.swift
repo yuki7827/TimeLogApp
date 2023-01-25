@@ -31,7 +31,7 @@ class TabViewController: UITabBarController {
         viewControllers.append(secondVC)
         
         // 3ページ目になるViewController
-        let thirdVC = SettingViewController()
+        let thirdVC = RedMineViewController()
         thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
         viewControllers.append(thirdVC)
         
